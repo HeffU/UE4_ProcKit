@@ -1,0 +1,29 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "0.1",
+  "FriendlyName": "ProcKit",
+  "Description": "Graphbased procedural components and related systems.",
+  "Category": "Scripting",
+  "CreatedBy": "Heff (Rasmus Egerö)",
+  "CreatedByURL": "https://heff.se/ProcKit",
+  "DocsURL": "https://heff.se/ProcKit",
+  "MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/ID_Goes_Here",
+  "SupportURL": "https://heff.se/ProcKit",
+  "EnabledByDefault": true,
+  "CanContainContent": true,
+  "IsBetaVersion": true,
+  "Installed": false,
+  "Modules": [
+    {
+      "Name": "ProcKit",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    },
+    {
+      "Name": "ProcKitEditor",
+      "Type": "Editor",
+      "LoadingPhase": "Default"
+    }
+  ]
+}
