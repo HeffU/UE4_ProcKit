@@ -19,6 +19,11 @@ class FProcKitEditorPlugin : public IProcKitEditorPlugin
 
 	void ProcKitButton_Clicked()
 	{
+		FLevelEditorModule& LevelEditorModule = FModuleManager::Get().GetModuleChecked<FLevelEditorModule>(TEXT("LevelEditor"));
+		TSharedPtr<class ILevelViewport> ActiveLevelViewport = LevelEditorModule.GetFirstActiveViewport();
+
+		GEditor->RequestPlaySession(false, ActiveLevelViewport, true, NULL, NULL, -1, false);
+		/*
 		TSharedRef<SWindow> ProcKitWindow = SNew(SWindow)
 			.Title(FText::FromString(TEXT("ProcKit Window")))
 			.ClientSize(FVector2D(800, 400))
@@ -38,6 +43,7 @@ class FProcKitEditorPlugin : public IProcKitEditorPlugin
 		{
 			FSlateApplication::Get().AddWindow(ProcKitWindow);
 		}
+		*/
 	}
 
 	void AddToolbarExtension(FToolBarBuilder &builder)
