@@ -56,8 +56,8 @@ class FProcKitEditorPlugin : public IProcKitEditorPlugin
 		builder.AddToolBarButton(
 			FProcKitCommands::Get().CommandButtonInfo,
 			NAME_None,
-			FText::FromString("ProcKit Button"),
-			FText::FromString("Click to open ProcKit window."),
+			FText::FromString("Simulate ProcKit"),
+			FText::FromString("Click to simulate physics for pending ProcKit objects"),
 			IconBrush,
 			NAME_None
 		);
